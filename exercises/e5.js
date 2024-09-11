@@ -1,8 +1,7 @@
-// In this exercise you'll complete a series of "comparison" mini exercises. 
-// Conditional logic is a huge part of coding. It's what helps a program make decisions. 
+// In this exercise you'll complete a series of "comparison" mini exercises.
+// Conditional logic is a huge part of coding. It's what helps a program make decisions.
 // Finish each exercise below.
 // You can use ANY type of function syntax you want: named, arrow, or expression with anonymous function.
-
 
 /** =========================
  * Create a getDiffTwentySeven(num) function to return the difference between a given number and 27
@@ -12,9 +11,19 @@
  */
 
 // Your code goes here...
+function getDiffTwentySeven(num) {
+  var twentySeven = 27;
+  var lessThan = twentySeven - num;
+  var greaterThan = (num - twentySeven) * 2;
 
+  if (num > twentySeven) {
+    console.log(greaterThan);
+  } else if (num < twentySeven) {
+    console.log(lessThan);
+  }
+}
 
-
+getDiffTwentySeven(4);
 
 /** =========================
  * Create a sumOfTwoIntegers(num1, num2) function to compute and return the sum of the two given integers
@@ -24,9 +33,18 @@
  */
 
 // Your code goes here
+function sumOfTwoIntegers(integer1, interger2) {
+  var sumOfBothIntegers = integer1 + interger2;
+  var tripleOfSum = sumOfBothIntegers * 3;
 
+  if (integer1 != interger2) {
+    console.log(sumOfBothIntegers);
+  } else if (integer1 === interger2) {
+    console.log(tripleOfSum);
+  }
+}
 
-
+sumOfTwoIntegers(4, 11);
 
 /** =========================
  * Create a isOneOfThemOrTheirSumIsFourty(num1, num2) function to check two given numbers and return a boolean.
@@ -39,19 +57,29 @@
 
 // Your code goes here...
 
+function isOneOfThemOrTheirSumIsFourty(number1, number2) {
+  var sumOfNumbers = number1 + number2;
 
+  if (number1 === 40 || number2 === 40) {
+    console.log(true);
+  } else if (sumOfNumbers === 40) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
 
+isOneOfThemOrTheirSumIsFourty(20, 10);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-5"
 // If the test has all tests passed, switch to the next exercise file
 // If any of the tests fails, refactor the code and run the test command after you've fixed the function
 
-
 // Do not delete or change the lines beneath
 const f = {
   getDiffTwentySeven: getDiffTwentySeven || undefined,
   sumOfTwoIntegers: sumOfTwoIntegers || undefined,
   isOneOfThemOrTheirSumIsFourty: isOneOfThemOrTheirSumIsFourty || undefined,
-}
-export { f }
+};
+export { f };
