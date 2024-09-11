@@ -18,7 +18,7 @@
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
 
 // Your code goes here:
-
+function myname
 
 
 /**
