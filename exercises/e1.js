@@ -15,8 +15,7 @@
 
 // Your code goes here
 function logMessage() {
-  const printMessage = "Hello, World!";
-  console.log(printMessage);
+  console.log("Hello, World!");
 }
 
 /**
@@ -49,10 +48,7 @@ function logMyMessage(thingIWantToSay) {
 // Your code goes here...
 
 function logMessageWithMyName(name) {
-  var namePhrase = "My name is ";
-  var name = "Miguel";
-
-  console.log(namePhrase + name);
+  console.log("My name is " + name + "!");
 }
 
 /**
@@ -68,13 +64,10 @@ function logMessageWithMyName(name) {
 
 // Your code goes here...
 function logMyInfo(myName, myAge) {
-  var firstPhrase = "My name is ";
-  var secondPhrase = ". I am ";
-  var thridPhrase = " years old!";
-  return firstPhrase + myName + secondPhrase + myAge + thridPhrase;
+  console.log(`My name is ${myName}. I am ${myAge} years old!`);
 }
 
-logMyInfo("Andrey", 23);
+// logMyInfo("Andrey", 23);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
