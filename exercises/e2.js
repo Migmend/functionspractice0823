@@ -15,22 +15,14 @@ function rectArea(w, l) {
   return w * l;
 }
 
-var sideOne = rectArea(3);
-var sideTwo = rectArea(2);
-
 // Use the function you created above to calculate the areas of 3 rooms
 // Assign the results to room1, room2, and room3 variables
 // Data for calculation: room1: 4 by 6, room2: 13 by 3, room3: 4 by 8
 
 // Your code goes here:
-
-function roomAreas(w, l) {
-  return w * l;
-}
-
-var room1 = 4 * 6;
-var room2 = 13 * 3;
-var room3 = 4 * 8;
+const room1 = rectArea(4, 6);
+const room2 = rectArea(13, 3);
+const room3 = rectArea(4, 8);
 
 /**
  * =============================================================
@@ -45,17 +37,13 @@ var room3 = 4 * 8;
 // Your code goes here...
 
 function totalRoomsArea(area1, area2, area3) {
-  var spaceOne = area1 * 2;
-  var spaceTwo = area2 * 4;
-  var spaceThree = area3 * 5;
+  return area1 + area2 + area3;
 }
-
-totalRoomsArea(24, 35, 24);
 
 // Make the function call in the parentheses of the console.log statement.
 // Use room1, room2, room3 variables as arguments for the function call
 const result = function () {
-  console.log("This is the overall area");
+  console.log(totalRoomsArea(room1, room2, room3));
 };
 
 // === TEST YOURSELF ===
