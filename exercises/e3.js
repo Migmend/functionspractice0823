@@ -42,49 +42,25 @@ function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
 
 // Your code goes here...
 function getValueWithConditionOne(num1, num2) {
-  var sumBoth = num1 + num2;
-  var doubleSum = sumBoth * 2;
-
-  for (let x = 40; x <= 40; x++) {
-    if (num1 === x && num2 === x) {
-      console.log(sumBoth);
-    } else if (num1 >= x || num2 >= x) {
-      console.log(doubleSum);
-    }
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2;
   }
+  return (num1 + num2) * 2;
 }
 
-getValueWithConditionOne(40, 40);
-
 const getValueWithConditionTwo = (num1, num2) => {
-  var sumBoth = num1 + num2;
-  var doubleSum = sumBoth * 2;
-
-  for (let x = 40; x <= 40; x++) {
-    if (num1 === x && num2 === x) {
-      console.log(sumBoth);
-    } else if (num1 >= x || num2 >= x) {
-      console.log(doubleSum);
-    }
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2;
   }
+  return (num1 + num2) * 2;
 };
-
-getValueWithConditionTwo(40, 40);
 
 const getValueWithConditionThree = function (num1, num2) {
-  var sumBoth = num1 + num2;
-  var doubleSum = sumBoth * 2;
-
-  for (let x = 40; x <= 40; x++) {
-    if (num1 === x && num2 === x) {
-      console.log(sumBoth);
-    } else if (num1 >= x || num2 >= x) {
-      console.log(doubleSum);
-    }
+  if (num1 === 40 && num2 === 40) {
+    return num1 + num2;
   }
+  return (num1 + num2) * 2;
 };
-
-getValueWithConditionThree(40, 40);
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
