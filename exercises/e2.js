@@ -5,6 +5,16 @@
 export function getNumbersWithSquareRoots(max) {
   // Your code goes here...
 
+  const arrNum = [];
+  for (let i = 0; i < max; i++) {
+    var square = i * i;
+    if (square < max) {
+      arrNum.push(square);
+    } else {
+      break;
+    }
+  }
+  return arrNum;
 }
 
 // === TEST YOURSELF ===
