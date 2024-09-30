@@ -24,18 +24,6 @@ export function getAllWithdrawals(array) {
     total.push(sum);
   }
   return total;
-
-  // let withdrawalsSum = 0;
-  // let newArr = [];
-  // for (let i = 0; i < array.length; i++) {
-  //   if (array[i].withdrawls) {
-  //     for (let w = 0; w < array.length; w++) {
-  //       withdrawalsSum += array[w].withdrawls[w];
-  //       newArr.push(withdrawalsSum);
-  //     }
-  //   }
-  // }
-  // return newArr;
 }
 
 // === TEST YOURSELF ===
