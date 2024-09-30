@@ -12,22 +12,21 @@
 import { bankAccounts } from "../data/data";
 
 export function getAllAccountsWithSumsOfDepositsLess2000(array) {
-  let newArr = [];
-
+  let arr = [];
   for (let i = 0; i < array.length; i++) {
     let sum = 0;
-    // if (array[i].deposits === undefined) {
-    //   newArr.push(array[i]);
-    // }
-    for (let x in array[i].deposits) {
+    if (!array[i].deposits) {
+      arr.push(array[i]);
+      continue;
+    }
+    for (let x = 0; x < array[i].deposits.length; x++) {
       sum += array[i].deposits[x];
     }
-    console.log(sum);
     if (sum < 2000) {
-      newArr.push(array[i]);
+      arr.push(array[i]);
     }
   }
-  return newArr;
+  return arr;
 }
 
 // === TEST YOURSELF ===
