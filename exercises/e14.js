@@ -30,37 +30,7 @@ export function getClientsWithWrongBalance(array) {
     }
   }
 
-  // for (let i = 0; i < array.length; i++) {
-
-  // }
-
-  // let sumWithdrawals = 0;
-
-  // for (let i = 0; i < array.length; i++) {
-
-  // }
-
-  // for (let i = 0; i < array.length; i++) {
-
-  // }
-
   return wrongBalance;
-
-  // for (let i = 0; i < array.length; i++) {
-  //   let sumDeposits = 0;
-  //   if (array[i].deposits) {
-  //     sumDeposits += array[i].deposits;
-  //     return sumDeposits;
-  //   }
-  // }
-
-  // for (let i = 0; i < array.length; i++) {
-  //   let sumWithdrawals = 0;
-  //   if (bankAccounts[i].withdrawals && bankAccounts[i].withdrawals.length) {
-  //     sumWithdrawals += bankAccounts[i].withdrawals;
-  //     return sumWithdrawals;
-  //   }
-  // }
 }
 
 // === TEST YOURSELF ===
